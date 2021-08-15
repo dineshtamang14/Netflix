@@ -1,0 +1,261 @@
+:root {
+    /* variable in css */
+    --colorForHeader: #E50914;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.head {
+    position: absolute;
+    top: 2rem;
+    /* left: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0px 50px;
+    z-index: 1000000;
+}
+
+.btn {
+    position: relative;
+    left: 500px;
+    padding: 4px;
+    border-radius: 2px #fff;
+    border-color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    outline: none;
+}
+
+.options {
+    padding: 4px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.head img{
+    width: 13%;
+}
+
+.head a{
+    position: relative;
+    left: 40px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #E50914;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:before {
+    content: '';
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to bottom, #000, transparent);
+}
+
+.banner:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+    z-index: 1;
+    background-image: linear-gradient(to top, #000, transparent);
+}
+
+.fit{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 2px;
+    width: 80%; 
+}
+
+.heading h2{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+
+.heading p{
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+    padding: 15px 0;
+    /* padding-bottom: 20px; */
+}
+
+.Email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    border-radius: 2px solid grey;
+    padding: 16px;
+    min-width: 29rem;
+    height: 1.5rem;
+    outline: none;
+    color: #000;
+}
+
+.Email a {
+    background-color: var(--colorForHeader);
+    min-width: 12rem;
+    line-height: 27px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2px solid;
+    letter-spacing: 0.5px;
+}
+
+/* section part description */
+.card-1,
+.card-2,
+.card-3,
+.card-4{
+    border-top: 8px solid #111;
+    padding: 50px;
+    color: #fff;
+}
+
+.card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-1{
+    padding-left: 80px;
+}
+
+.style-cards h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+
+}
+
+.style-cards p{
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+.card-1 video{
+    position: relative;
+    height: 58%;
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+.card-1 img {
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-2, .card-4{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-2, .desc-4{
+    padding-left: 100px;
+    /* padding-right: 20px; */
+}
+
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-3{
+    padding-left: 80px;
+}
+
+.card-3 video{
+    position: relative;
+    top: -90px;
+    left: 125px;
+    height: 78%;
+    width: 70%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    /* margin-left: 15%; */
+}
+
+.card-3 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+
+
