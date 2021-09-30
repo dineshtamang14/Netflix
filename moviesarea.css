@@ -25,7 +25,7 @@ body{
 }
 
 .home-image{
-    background-image: url(asset/hoome.jpg);
+    background-image: url(https://netflix-clone-asset.s3.ap-south-1.amazonaws.com/asset/hoome.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
